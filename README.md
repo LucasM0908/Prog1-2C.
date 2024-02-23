@@ -72,3 +72,15 @@
 </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html coding</title>
+  </head>
+  <body>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+  </body>
+</html>
