@@ -1,159 +1,74 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Torregamaes - Venda de Key de Jogos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-
-    .container {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    .logo {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .logo img {
-      width: 300px;
-    }
-
-    .menu {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .menu a:hover {
-      color: #666;
-    }
-
-    .content {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
-      margin-top: 20px;
-    }
-
-    .card {
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .card h3 {
-      text-align: center;
-      margin: 10px 0;
-    }
-
-    .card p {
-      text-align: center;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .card button {
-      display: block;
-      width: 80%;
-      margin: 10px auto;
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      background-color: #333;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .card button:hover {
-      background-color: #666;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .footer a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .footer a:hover {
-      color: #666;
-    }
-  </style>
+  <title>Webleb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div class="section">
   <div class="container">
-    <div class="logo">
-      <img src="logo.png" alt="Logo do Torregamaes">
+    <div class="row full-height justify-content-center">
+      <div class="col-12 text-center align-self-center py-5">
+        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+          <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                <label for="reg-log"></label>
+          <div class="card-3d-wrap mx-auto">
+            <div class="card-3d-wrapper">
+              <div class="card-front">
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-4 pb-3">Log In</h4>
+                    <div class="form-group">
+                      <input type="email" class="form-style" placeholder="Email">
+                      <i class="input-icon uil uil-at"></i>
+                    </div>	
+                    <div class="form-group mt-2">
+                      <input type="password" class="form-style" placeholder="Password">
+                      <i class="input-icon uil uil-lock-alt"></i>
+                    </div>
+                    <a href="https://www.web-leb.com/code" class="btn mt-4">Login</a>
+                    <p class="mb-0 mt-4 text-center"><a href="https://www.web-leb.com/code" class="link">Forgot your password?</a></p>
+                      </div>
+                    </div>
+                  </div>
+              <div class="card-back">
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-3 pb-3">Sign Up</h4>
+                    <div class="form-group">
+                      <input type="text" class="form-style" placeholder="Full Name">
+                      <i class="input-icon uil uil-user"></i>
+                    </div>	
+                    <div class="form-group mt-2">
+                      <input type="tel" class="form-style" placeholder="Phone Number">
+                      <i class="input-icon uil uil-phone"></i>
+                    </div>	
+                    <div class="form-group mt-2">
+                      <input type="email" class="form-style" placeholder="Email">
+                      <i class="input-icon uil uil-at"></i>
+                    </div>
+                    <div class="form-group mt-2">
+                      <input type="password" class="form-style" placeholder="Password">
+                      <i class="input-icon uil uil-lock-alt"></i>
+                    </div>
+                    <a href="https://www.web-leb.com/code" class="btn mt-4">Register</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="menu">
-      <a href="#">Início</a>
-      <a href="#">Plataformas</a>
-      <a href="#">Gêneros</a>
-      <a href="#">Contato</a>
-    </div>
-    <div class="content">
-      <div class="card">
-        <img src="gta5.jpg" alt="GTA 5">
-        <h3>GTA 5</h3>
-        <p>R$ 49,90</p>
-        <button onclick="buy('GTA 5', '49.90')">Comprar</button>
-      </div>
-      <div class="card">
-        <img src="minecraft.jpg" alt="Minecraft">
-        <h3>Minecraft</h3>
-        <p>R$ 29,90</p>
-        <button onclick="buy('Minecraft', '29.90')">Comprar</button>
-      </div>
-      <div class="card">
-        <img src="fifa21.jpg" alt="FIFA 21">
-        <h3>FIFA 21</h3>
-        <p>R$ 99,90</p>
-        <button onclick="buy('FIFA 21', '99.90')">Comprar</button>
-      </div>
-      <div class="card">
-        <img src="cyberpunk2077.jpg" alt="Cyberpunk 2077">
-        <h3>Cyberpunk 2077</h3>
-        <p>R$ 199,90</p>
-        <button onclick="buy('Cyberpunk 2077', '199.90')">Comprar</button>
-      </div>
-    </div>
-    <div class="footer">
-      <p>Todos os direitos reservados © Torregamaes 2024</p>
-      <p>Formas de pagamento: PIX ou Cartão</p>
-      <a href="#">Política de privacidade</a> | <a href="#">Termos de uso</a>
-    </div>
-  </div>
-  <script>
-    function buy(game, price) {
-      // Essa função é apenas um exemplo e não faz o pagamento ou a entrega da Key de verdade
-      // Você pode usar uma API de pagamento como o Mercado Pago ou o PagSeguro para integrar o seu site
-      // Você também pode usar um serviço de email como o SendGrid ou o Mailgun para enviar a Key para o cliente
-      alert("Você comprou o jogo " + game + " por R$ " + price + ". A Key será enviada para o seu email em breve.");
-    }
-  </script>
+</div>
 </body>
 </html>
